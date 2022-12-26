@@ -23,7 +23,7 @@ class MyFrame
     public MyFrame()
     {
         setTitle("Registration");
-        setBounds(300, 90, 535, 500);
+        setBounds(300, 90, 535, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
  
@@ -82,7 +82,7 @@ class MyFrame
         res = new JLabel("");
         res.setFont(new Font("Arial", Font.PLAIN, 20));
         res.setSize(500, 25);
-        res.setLocation(100, 300);
+        res.setLocation(140, 300);
         c.add(res);
  
         setVisible(true);
@@ -92,7 +92,7 @@ class MyFrame
     {
         if (e.getSource() == sub) {
             if (tname.getText().equals("") || tmno.getText().equals("") || tpsw.getText().equals("")) {
-                res.setText("Please fill all of the fiels");
+                res.setText("Please fill all of the fields");
             }
             else {
 				res.setText("");
